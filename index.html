@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/5d44695dbc.js"></script>
+<title>SHOP ONN!</title>
+<link rel='shortcut icon' href='logos/logo4.png' type='image/png' />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="main.js" ></script>
+<link rel="stylesheet" href="css/animate.css">
+<script src="wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+.search-container button{
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-left:0px;
+  background: aqua;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  color:khaki;
+}
+.search-container {
+  display:inline-block;
+  float: center;
+  margin:0px;
+  width:800px;
+}
+input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border:none;
+  width:700px;
+  float:left;
+  margin-right:0px;
+}
+.search-container button:hover {
+  background: #ccc;
+}
+.nav-bar a{
+font-family:cursive;
+font-size:20px;
+}
+ .nav-bar a:hover
+ {
+
+ text-decoration:none;
+ }
+.mySlides
+{
+display:none;
+}
+.w3-left, .w3-right, .w3-badge
+{
+cursor:pointer;
+}
+.w3-badge{
+height:13px;
+width:13px;
+padding:0;
+}
+label{
+  font-size: 25px;
+  font-style: normal;
+  font-family: Comic Sans MS;
+  color:yellow;
+  font-weight: normal;
+}
+.social-icons{
+  font-size:40px;
+
+}
+.logo-icon:hover{
+  color:#E40066;
+}
+</style>
+</head>
+<body>
+<!-- top logo row -->
+<div class="w3-container w3-border-0 w3-border-yellow" style="background-color: #172A3A;height:80px;padding:0px;margin:0px;">
+  <div class="w3-row " style="margin:0px;height:80px;">
+  <!--      logo here........ -->
+  <div class="w3-col m4 l2">
+    <a href="index.html"  class="" style="margin:0px;">
+	   <img class="w3-hover-opacity" src="logos/logo1.jpg" alt="logo" style="height:78px;width:100%;margin:0px;" />
+	</a>
+  </div>
+
+  <!-- search bar goes here........  -->
+  <div class=" w3-col m8 l7 w3-center" style="padding:0px;">
+  	   <div class=" w3-container search-container w3-center " style="height:80px;">
+       		<form action="/action_page.php">
+    		    <input class="w3-input w3-border-0 w3-round" type="text" placeholder="Search.." name="search">
+    		    <button type="submit" class="w3-border-0 w3-round w3-color-khaki" style="margin-left:0px;position:relative;left:-10px;"><i class="fa fa-search" style="margin:0px;"></i></button>
+      		</form>
+       </div>
+  </div>
+
+  <!-- icon col -->
+  <div class="w3-col m4 l3">
+  	   <div class="w3-row " style="height:80px;margin:0px;padding:0px;">
+	   		<div class="w3-col m4 l3 w3-middle logoicon" style="height:80px;margin:0px;padding:0px;">
+				 <i class="far fa-heart w3-xxlarge w3-center logo-icon w3-hover-text-red" style="margin:auto;padding:0px;position:relative;top:20px;left:25px;color:#0FFF95"></i>
+
+			</div>
+
+			<div class="w3-col m4 l3 w3-middle logo-icon" style="height:80px;margin:0px;padding:0px;">
+				 <i class="far fa-bell w3-xxlarge w3-center logo-icon w3-hover-text-red" style="margin:auto;padding:0px;position:relative;top:20px;left:25px;color:#0FFF95"></i>
+
+			</div>
+
+			<div class="w3-col m4 l3 w3-middle logo-icon" style="height:80px;margin:0px;padding:0px;">
+				 <i class="fas fa-cart-plus w3-xxlarge w3-center logo-icon w3-hover-text-red" style="margin:auto;padding:0px;position:relative;top:20px;left:25px;color:#0FFF95"></i>
+
+			</div>
+
+			<div class="w3-col m4 l3 w3-center" style="height:80px;margin:0px;">
+				 <img src="w3images/avatar.png" class="w3-circle w3-middle" alt="car" width="50px" height="50px" style="margin:auto;position:relative;top:12px;">
+
+			</div>
+
+	   </div>
+
+  </div>
+</div>
+</div>
+
+<!-- nav bar..........  -->
+<div class="w3-bar w3-border-0 w3-border-black w3-yellow nav-bar w3-card-4 " style="margin:0px;position:relative;top:-10px;">
+  <div class="" style="position:sticky;top:0px;">
+
+
+  <a href="#" class=" w3-bar-item w3-button" onclick="w3_open_left()"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fas fa-home" style="font-size:20px;"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-green" >Mobile</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-blue">Computer</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Electronics</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Fashion</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Grocery</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Sports</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Stationary</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Bags</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-teal">Toys</a>
+  <a href="#" class=" w3-bar-item w3-button w3-right" onclick="w3_open_right()"><i class="fas fa-filter"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-teal w3-right">Today's Deal!!</a>
+</div>
+</div>
+
+<!-- Slideshow ................  ................ -->
+<div class="w3-content w3-display-container" style="max-width:100%;top:-10px;">
+  <img class="mySlides" src="w3images/slide 1.png" style="width:100%">
+  <img class="mySlides" src="w3images/slide 2.jpg" style="width:100%">
+  <img class="mySlides" src="w3images/slide 3.jpg" style="width:100%">
+  <img class="mySlides" src="w3images/slide 4.jpg" style="width:100%">
+  <img class="mySlides" src="w3images/slide 3.jpg" style="width:100%">
+
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-middle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+	<div class="w3-badge demo w3-border w3-transparent w3-hover-red w3-display-bottommiddle" onclick="currentDiv(1)" style="left:720px;bottom:-180px;"></div>
+    <div class="w3-badge demo w3-border w3-transparent w3-hover-red w3-display-bottommiddle" onclick="currentDiv(2)" style="left:740px;bottom:-180px;"></div>
+    <div class="w3-badge demo w3-border w3-transparent w3-hover-white w3-display-bottommiddle" onclick="currentDiv(3)" style="left:760px;bottom:-180px;"></div>
+    <div class="w3-badge demo w3-border w3-transparent w3-hover-red w3-display-bottommiddle" onclick="currentDiv(4)" style="left:780px;bottom:-180px;"></div>
+    <div class="w3-badge demo w3-border w3-transparent w3-hover-red w3-display-bottommiddle" onclick="currentDiv(5)" style="left:800px;bottom:-180px;"></div>
+
+  </div>
+</div>
+
+
+
+<!-- left Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:300px;font-family:arail;" id="mySidebar">
+  <div style="display:relative;">
+  <div class="w3-bar-item w3-button w3-display-container" style="">CONTENT<div class="w3-right w3-hover-text-red w3-display-right" onclick="w3_close()" style="font-size:60px;margin:0px;width:20px;right:20px;display:absolute;" >&times;</div></div>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button" >Your orders</a>
+
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Contact us</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button" >About</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button" >FAQ?</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button" >TRack your order</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button" >Sign Out</a>
+
+
+
+
+  </div>
+</nav>
+
+
+<!-- right filter menu...-->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-right " style="display:none;z-index:2;width:300px;" id="myFilterMenu">
+  <div style="display:relative; font-family:comic-sans;">
+  <div class="w3-bar-item w3-button w3-display-container" style="">FILTERS<div class="w3-right w3-hover-text-red w3-display-right" onclick="w3_close()" style="font-size:60px;margin:0px;width:20px;right:20px;display:absolute;" >&times;</div></div>
+
+  <form class="w3-container ">
+  <h3>By Brands</h3>
+  <p >
+  <input class="w3-check" type="checkbox" checked="checked">
+  <label>SONY</label>
+  </br>
+  <input class="w3-check" type="checkbox">
+  <label> OPPO</label></br>
+  <input class="w3-check" type="checkbox" checked="checked">
+  <label>SONY</label>
+  </br>
+  <input class="w3-check" type="checkbox" checked="checked">
+  <label>XIAOMI</label>
+  </br>
+  <input class="w3-check" type="checkbox" checked="checked">
+  <label>VIVO</label>
+  </br>
+  <input class="w3-check" type="checkbox" checked="checked">
+  <label>NOKIA</label>
+  </br>
+  <input class="w3-check" type="checkbox" checked="checked">
+  <label>SAMSUNG</label>
+  </br>
+</p>
+</form>
+<form class="w3-container ">
+  <h3>By Price</h3>
+  <p >
+    <input class="w3-check" type="radio" checked="checked" name="ByPriceRadio">
+    <label>Less than 10 k</label>
+    </br>
+    <input class="w3-check" type="radio" name="ByPriceRadio">
+    <label>Less than 20 k</label>
+    </br>
+    <input class="w3-check" type="radio" name="ByPriceRadio" >
+    <label>Less than 30 k</label>
+    </br>
+    <input class="w3-check" type="radio" name="ByPriceRadio">
+    <label>Less than 40 k</label>
+    </br>
+    <input class="w3-check" type="radio" name="ByPriceRadio">
+    <label>Above 10 k</label>
+    </br>
+
+</p>
+</form>
+
+
+  </div>
+</nav>
+
+<!-- Top menu -->
+<div class=" w3-container">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-right w3-padding-16"></div>
+    <div class="w3-center w3-padding-16">MOBILES</div>
+  </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center wow bounceInUp" >
+    <div class="w3-quarter w3-hover-opacity">
+      <img src="w3images/mobile/apple iphone X.jpg" alt="Sandwich" style="max-width:100%">
+      <h3>Apple Iphone X</h3>
+      <p> Price:60,000</p>
+    </div>
+    <div class="w3-quarter w3-hover-opacity">
+      <img src="w3images/mobile/apple iphone XR.jpg" alt="Steak" style="max-width:100%">
+      <h3>Apple Iphone XR</h3>
+      <p>Price:70,000</p>
+    </div>
+    <div class="w3-quarter w3-hover-opacity">
+      <img src="w3images/mobile/google pixel 3 XL.jpg" alt="Cherries" style="max-width:100%">
+      <h3>Google Pixel 3 XL</h3>
+      <p>Price : 50,000</p>
+
+    </div>
+    <div class="w3-quarter w3-hover-opacity">
+      <img src="w3images/mobile/honor h9.jpg" alt="Pasta and Wine" style="max-width:100%">
+      <h3>Honor H9</h3>
+      <p>Price : 40,000</p>
+    </div>
+  </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center wow bounceInUp ">
+    <div class="w3-quarter w3-hover-opacity">
+      <img src="w3images/mobile/motorola g7 power.jpg" alt="motorola g7 power" style="max-width:100%">
+      <h3>MOTOROLA G7 POWER</h3>
+      <p>PRICE:30,000</p>
+    </div>
+    <div class="w3-quarter w3-hover-opacity">
+      <img src="w3images/mobile/nokia 6.1 plus.jpg" alt="nokia 6.1 plus" style="max-width:100%">
+      <h3>Nokia 6.1 Plus</h3>
+      <p>Price:20,000</p>
+    </div>
+    <div class="w3-quarter w3-hover-opacity">
+      <img src="w3images/mobile/oppo f9.jpg" alt="oppo f9" style="max-width:100%">
+      <h3>OPPO F9</h3>
+      <p>Price:10,000</p>
+    </div>
+    <div class="w3-quarter w3-hover-opacity">
+      <img src="w3images/mobile/realme 3 pro.jpg" alt="realme 3 pro.jpg" style="max-width:100%">
+      <h3>REAL ME PRO</h3>
+      <p>Price:20,000</p>
+    </div>
+  </div>
+
+
+  <!-- third Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center wow bounceInUp">
+    <div class="w3-quarter w3-hover-opacity">
+      <img src="w3images/mobile/redmi y3.jpg" alt="redmi y3" style="max-width:100%">
+      <h3>REDMI y3</h3>
+      <p>PRICE:30,500</p>
+    </div>
+    <div class="w3-quarter w3-hover-opacity">
+      <img src="w3images/mobile/samsung galaxy m30.jpg" alt="samsung galaxy m3" style="max-width:100%">
+      <h3>SAMSUNG GALAXY M3</h3>
+      <p>Price:40,000</p>
+    </div>
+    <div class="w3-quarter w3-hover-opacity">
+      <img src="w3images/mobile/vivo y15.jpg" alt="vivo y15" style="max-width:100%">
+      <h3>VIVO Y15</h3>
+      <p>Price:18,000</p>
+    </div>
+    <div class="w3-quarter w3-hover-opacity">
+      <img src="w3images/mobile/xiamoi mi a3.jpg" alt="xiaomi mi a3.jpg" style="max-width:100%">
+      <h3>XIAMOI MI A3</h3>
+      <p>Price:20,000</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <hr id="about">
+
+  <!-- About Section -->
+  <!-- <div class="w3-container w3-padding-32 w3-center">
+    <h3>About Me, The Food Man</h3><br>
+    <img src="w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>I am Who I Am!</b></h4>
+      <h6><i>With Passion For Real, Good Food</i></h6>
+      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div>
+  </div>
+  <hr> -->
+
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32 w3-center">
+  <div class="footer w3 center">
+    <p>Contact us</p>
+    <div class="social-media-icons w3-center">
+   <div class="w3-row  w3-center" style="width:500px;position:relative;left:330px;">
+   <div class="w3-col m4  w3-center">
+    <p><i class="fab fa-instagram social-icons w3-hover-text-red"></i></p>
+   </div>
+   <div class="w3-col m4  w3-center">
+    <p><i class="fab fa-facebook social-icons w3-hover-text-aqua"></i></p>
+   </div>
+   <div class="w3-col m4 w3-center">
+    <p><i class="fab fa-twitter-square social-icons w3-hover-text-aqua"></i></p>
+   </div>
+</div>
+
+    </div>
+  </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+<script>
+              //new WOW().init();
+
+// open left side menu...
+function w3_open_left() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+//open right filter menu...
+function w3_open_right() {
+  document.getElementById("myFilterMenu").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myFilterMenu").style.display = "none";
+
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n=+1){
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+setInterval(plusDivs,2000);
+
+</script>
+
+
+</body>
+</html>
